@@ -1,0 +1,12 @@
+opn:
+  - pattern: "package.json"
+    run: "echo ${OPN}"
+    command:
+      "test":
+        run: "echo 'Running test command'"
+  - pattern: "README.md"
+    run: "echo 'Running README command'"
+  - pattern: ".*.md"
+    run: "echo 'Running Markdown command'"
+  - pattern: ".*.js"
+    run: "echo 'Running JS command'"
